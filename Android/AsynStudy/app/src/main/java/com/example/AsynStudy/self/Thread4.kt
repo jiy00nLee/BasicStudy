@@ -1,4 +1,4 @@
-package com.example.AsynStudy
+package com.example.AsynStudy.self
 
 import android.os.*
 import androidx.appcompat.app.AppCompatActivity

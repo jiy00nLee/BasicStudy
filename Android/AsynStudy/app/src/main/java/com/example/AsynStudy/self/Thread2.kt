@@ -1,4 +1,4 @@
-package com.example.AsynStudy
+package com.example.AsynStudy.self
 
 import android.os.Bundle
 import android.os.SystemClock
