@@ -1,17 +1,18 @@
 package com.example.AsynStudy.coroutines
 
 import android.os.Bundle
-import com.example.AsynStudy.databinding.ActivityMainBinding
+import androidx.appcompat.app.AppCompatActivity
+import com.example.AsynStudy.databinding.FragmentStudyBinding
 import kotlinx.coroutines.*
 import java.io.Closeable
 
-class CoroutineCancelling {
-    private lateinit var binding: ActivityMainBinding
+class CoroutineCancelling : AppCompatActivity() {
+    private lateinit var binding: FragmentStudyBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = FragmentStudyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //cancel1()

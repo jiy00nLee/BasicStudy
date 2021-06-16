@@ -4,18 +4,18 @@ import android.content.ContentValues
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.AsynStudy.databinding.ActivityMainBinding
+import com.example.AsynStudy.databinding.FragmentStudyBinding
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 class Coroutine1 : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: FragmentStudyBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = FragmentStudyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         main()

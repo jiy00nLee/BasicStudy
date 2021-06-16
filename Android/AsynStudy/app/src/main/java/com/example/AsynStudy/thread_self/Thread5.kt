@@ -1,21 +1,21 @@
-package com.example.AsynStudy.self
+package com.example.AsynStudy.thread_self
 
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.example.AsynStudy.databinding.ActivityMainBinding
+import com.example.AsynStudy.databinding.FragmentStudyBinding
 
 class Thread5 : AppCompatActivity() {
     private var isRunning = true
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: FragmentStudyBinding
     private val handler : Handler = Handler(Looper.getMainLooper())
 
     private var thread : Thread? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = FragmentStudyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setProgressBar()

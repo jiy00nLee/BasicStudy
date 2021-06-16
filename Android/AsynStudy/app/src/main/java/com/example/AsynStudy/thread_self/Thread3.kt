@@ -1,20 +1,20 @@
-package com.example.AsynStudy.self
+package com.example.AsynStudy.thread_self
 
 import android.os.*
 import androidx.appcompat.app.AppCompatActivity
-import com.example.AsynStudy.databinding.ActivityMainBinding
+import com.example.AsynStudy.databinding.FragmentStudyBinding
 
 // 3) 기본 쓰레드 예제.(Looper&Handler)
 class Thread3: AppCompatActivity() {
     private var isRunning = true
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: FragmentStudyBinding
 
     val HandlerThreadClass=  HandlerThread("message which you want to send")
     val handler : CustomHandler = CustomHandler()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = FragmentStudyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val thread = ThreadClass()

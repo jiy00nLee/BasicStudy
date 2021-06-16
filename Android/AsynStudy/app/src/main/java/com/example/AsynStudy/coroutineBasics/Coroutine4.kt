@@ -3,12 +3,12 @@ package com.example.AsynStudy.coroutineBasics
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.AsynStudy.databinding.ActivityMainBinding
+import com.example.AsynStudy.databinding.FragmentStudyBinding
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
 class Coroutine4  : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: FragmentStudyBinding
 
     // Job을 등록할 수 있도록 초기화
     // CoroutineScope의 동작을 제어할 객체
@@ -29,7 +29,7 @@ class Coroutine4  : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = FragmentStudyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         easyMain()

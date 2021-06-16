@@ -1,19 +1,19 @@
-package com.example.AsynStudy.self
+package com.example.AsynStudy.thread_self
 
 import android.os.Bundle
 import android.os.SystemClock
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.AsynStudy.databinding.ActivityMainBinding
+import com.example.AsynStudy.databinding.FragmentStudyBinding
 
 // 1) 기본-멀티쓰레드 예제
 class Thread2  : AppCompatActivity() {
     private var isRunning = true
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: FragmentStudyBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = FragmentStudyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val sharedObject = sharedObject()
